@@ -1,10 +1,10 @@
 
-@import "utilities/variables.scss";
-@import "utilities/extensiones.scss";
+@import "scss/utilities/variables.scss";
+@import "scss/utilities/extensiones.scss";
 
-@import "utilities/estilos600";
+@import "scss/utilities/estilos600";
 
-@import "utilities/estilos1024";
+@import "scss/utilities/estilos1024";
 
 
 
@@ -35,10 +35,16 @@
         background-position: center;
         background-repeat: no-repeat;
 
+        
+       
+        
+        
+
         .logoMenu{
             @include flexColumn;
             margin-top: 0px;
             margin-bottom: 5rem;
+            height: 30rem;
 
             .logo{
                 text-align: center; /*clase .logo*/
@@ -54,12 +60,12 @@
             .menu{
                 padding: 10px;
                 margin: 1px 15px 50px 10px;
-                text-align: start;
+                text-align: center;
 
                 ul li{
                     margin: 10px;
                     list-style: none;
-                    margin: 2rem;
+                    margin: 1rem;
                     &:hover{
                         transform: scale(1.2);
                         color: white;
@@ -89,17 +95,21 @@
             font-weight: bold;
             color: azure;
             text-align: end;
+            position:static;
+            
+           
+           
 
             h1{
                 text-align: end;
                 font-size: 25px;
-                color: azure;
+                color: $colorLema600;
             }
             
             .lemaEmpresa{
                 font-style: italic; /*clase .lemaEmpresa*/
                 font-weight: bold;
-                color: azure;
+                color: $colorLema600;
                 text-align: end;
             }
         }
@@ -128,6 +138,8 @@
         grid-area: main;
         background-color: $colorFondo;
         padding-top: 10px;
+        display: flex;
+        flex-direction: column;
 
         .sectionImgPresentacion{
             @include flexColumn;
@@ -179,6 +191,13 @@
                         transform: scaleY(1.035);
                     }
 
+                    div{
+                        .imgNoticias{
+                            height: max-content;
+                            width: max-content;
+                        }
+                    }
+
                     .infoNoticias{
                         text-align: center;
                         margin: 10px;
@@ -210,34 +229,56 @@
 
         .sectionLogos{
             @include flexColumn;
+            justify-content: center;
+            align-items: center;
+            
+            
 
             .cajaEncabezadoLogoEmpresas{
                 text-align: center;
                 padding-top: 50px;
             }
 
+
             .cajaLogosEmpresas{
                 @include flexRow;
-                flex-wrap: wrap; 
+                flex-wrap: nowrap; 
                 justify-content: center;
                 align-content: space-between;
-                gap: 5px;
+
                 border: 2px solid black;
                 text-align: center;
-                margin-bottom: 1rem;
-                padding: 0.5rem 0.2rem 0.5rem 0.2rem;
-
-                .imgLogos{
-                    width: 7rem;
-                    height: auto;
-                    border: 1px solid gray;
-                }
-
-                .noVisible{
-                   display: none;
-                }
                 
+                padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+                width: max-content;
+                height: max-content;
+
+                div{
+                    @include flexColumn;
+                    justify-content: center;
+
+                    .imgLogos{
+                    /*  width: 7rem;
+                    height: auto; */
+                    border: 1px solid gray;
+                    margin: 3px;
+                    }
+    
+                    .noVisible{
+                        display: none;
+                    }
+                }
+    
+                  
+    
+                
+                    
             }
+
+
+            
+
+          
 
         }
     }
@@ -331,7 +372,7 @@
                 ul li{
                     margin: 10px;
                     list-style: none;
-                    margin: 2rem;
+                    margin: 1rem;
                     &:hover{
                         transform: scale(1.2);
                         color: white;
@@ -364,13 +405,13 @@
             h1{
                 text-align: end;
                 font-size: 25px;
-                color: azure;
+                color: $colorLema600;
             }
             
             .lemaEmpresa{
                 font-style: italic; /*clase .lemaEmpresa*/
                 font-weight: bold;
-                color: azure;
+                color: $colorLema600;
                 text-align: end;
             }
         }
@@ -470,7 +511,7 @@
                 ul li{
                     margin: 10px;
                     list-style: none;
-                    margin: 2rem;
+                    margin: 1rem;
                     &:hover{
                         transform: scale(1.2);
                         color: white;
@@ -503,13 +544,13 @@
             h1{
                 text-align: end;
                 font-size: 25px;
-                color: azure;
+                color: $colorLema600;
             }
             
             .lemaEmpresa{
                 font-style: italic; /*clase .lemaEmpresa*/
                 font-weight: bold;
-                color: azure;
+                color: $colorLema600;
                 text-align: end;
             }
         }
@@ -585,7 +626,7 @@
                 ul li{
                     margin: 10px;
                     list-style: none;
-                    margin: 2rem;
+                    margin: 1rem;
                     &:hover{
                         transform: scale(1.2);
                         color: white;
@@ -618,13 +659,13 @@
             h1{
                 text-align: end;
                 font-size: 25px;
-                color: azure;
+                color: $colorLema600;
             }
             
             .lemaEmpresa{
                 font-style: italic; /*clase .lemaEmpresa*/
                 font-weight: bold;
-                color: azure;
+                color: $colorLema600;
                 text-align: end;
             }
         }
@@ -694,7 +735,7 @@
                 ul li{
                     margin: 10px;
                     list-style: none;
-                    margin: 2rem;
+                    margin: 1rem;
                     &:hover{
                         transform: scale(1.2);
                         color: white;
@@ -728,13 +769,13 @@
             h1{
                 text-align: end;
                 font-size: 25px;
-                color: azure;
+                color: $colorLema600;
             }
             
             .lemaEmpresa{
                 font-style: italic; /*clase .lemaEmpresa*/
                 font-weight: bold;
-                color: azure;
+                color: $colorLema600;
                 text-align: end;
             }
         }
@@ -778,7 +819,7 @@
 
 
 }
-@import "utilities/estilos600";
+@import "scss/utilities/estilos600";
 
-@import "utilities/estilos1024";
+@import "scss/utilities/estilos1024";
 

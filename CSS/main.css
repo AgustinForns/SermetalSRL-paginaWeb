@@ -114,59 +114,72 @@
             transform: scale(1.1); }
         .contenedor main .sectionImgPresentacion .noVisible {
           display: block; }
-      .contenedor main .sectionNoticias .noticias {
-        text-align: center;
-        margin: 50px 10px 10px 10px;
-        padding: 10px; }
-      .contenedor main .sectionNoticias .cajaNoticiasGeneral {
+      .contenedor main .sectionNoticias {
         display: flex;
         flex-direction: column; }
-        .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias {
-          display: flex;
-          flex-direction: row;
-          background-color: #aba9bb;
-          border: 2px solid gray;
-          padding: 10px 30px 30px 30px;
-          margin: 10px; }
-          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias:hover {
-            transform: scaleY(1.035); }
-          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias .infoNoticias {
-            text-align: center;
-            margin: 10px; }
-      .contenedor main .sectionNoticias .infoNoticias {
-        text-align: center;
-        margin: 10px; }
-        .contenedor main .sectionNoticias .infoNoticias .botonVerTodas {
-          display: inline-block;
+        .contenedor main .sectionNoticias .noticias {
           text-align: center;
-          text-decoration: none;
-          color: black;
-          background-color: gray;
-          border: 1px transparent solid;
-          border-radius: 100px;
-          padding: 10px;
-          font-weight: bold;
-          margin-bottom: 10px; }
-      .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
-        text-align: center;
-        padding-top: 50px; }
-      .contenedor main .sectionLogos .cajaLogosEmpresas {
+          margin: 50px 10px 10px 10px;
+          padding: 10px; }
+        .contenedor main .sectionNoticias .cajaNoticiasGeneral {
+          display: flex;
+          flex-direction: column; }
+          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias {
+            display: flex;
+            flex-direction: row;
+            background-color: #aba9bb;
+            border: 2px solid gray;
+            padding: 10px 20px 10px 20px;
+            margin: 10px; }
+            .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias:hover {
+              transform: scaleY(1.035); }
+            .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias .infoNoticias {
+              text-align: center;
+              margin: 10px; }
+        .contenedor main .sectionNoticias .infoNoticias {
+          text-align: center;
+          margin: 10px; }
+          .contenedor main .sectionNoticias .infoNoticias .botonVerTodas {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: gray;
+            border: 1px transparent solid;
+            border-radius: 100px;
+            padding: 10px;
+            font-weight: bold;
+            margin-bottom: 10px; }
+      .contenedor main .sectionLogos {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        align-content: space-between;
-        gap: 5px;
-        border: 2px solid black;
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
-          width: 7rem;
-          height: auto;
-          border: 1px solid gray; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
-          display: flex; }
+        align-content: center; }
+        .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
+          text-align: center;
+          padding-top: 50px; }
+        .contenedor main .sectionLogos .cajaLogosEmpresas {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+          gap: 5px;
+          border: 2px solid black;
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+          width: fit-content;
+          height: fit-content; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas div {
+            display: flex;
+            flex-direction: row; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
+            display: flex; }
     .contenedor footer {
       grid-area: footer; }
       .contenedor footer .cajaContactoCV {
@@ -683,26 +696,31 @@
           padding: 10px;
           font-weight: bold;
           margin-bottom: 10px; }
-      .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
-        text-align: center;
-        padding-top: 50px; }
-      .contenedor main .sectionLogos .cajaLogosEmpresas {
+      .contenedor main .sectionLogos {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
-        gap: 5px;
-        border: 2px solid black;
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
-          width: 7rem;
-          height: auto;
-          border: 1px solid gray; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
-          display: none; }
+        flex-direction: column; }
+        .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
+          text-align: center;
+          padding-top: 50px; }
+        .contenedor main .sectionLogos .cajaLogosEmpresas {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: space-between;
+          gap: 5px;
+          border: 2px solid black;
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+          width: min-content;
+          height: min-content; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
+            display: none; }
     .contenedor footer {
       grid-area: footer; }
       .contenedor footer .cajaContactoCV {
@@ -1094,7 +1112,8 @@
       display: flex;
       flex-direction: column;
       margin-top: 0px;
-      margin-bottom: 5rem; }
+      margin-bottom: 5rem;
+      height: 30rem; }
       .contenedor header .logoMenu .logo {
         text-align: center;
         /*clase .logo*/ }
@@ -1103,11 +1122,11 @@
       .contenedor header .logoMenu .menu {
         padding: 10px;
         margin: 1px 15px 50px 10px;
-        text-align: start; }
+        text-align: center; }
         .contenedor header .logoMenu .menu ul li {
           margin: 10px;
           list-style: none;
-          margin: 2rem; }
+          margin: 1rem; }
           .contenedor header .logoMenu .menu ul li:hover {
             transform: scale(1.2);
             color: white; }
@@ -1126,16 +1145,17 @@
       /*clase .lemaEmpresa*/
       font-weight: bold;
       color: azure;
-      text-align: end; }
+      text-align: end;
+      position: static; }
       .contenedor header .tituloLemaEmpresa h1 {
         text-align: end;
         font-size: 25px;
-        color: azure; }
+        color: white; }
       .contenedor header .tituloLemaEmpresa .lemaEmpresa {
         font-style: italic;
         /*clase .lemaEmpresa*/
         font-weight: bold;
-        color: azure;
+        color: white;
         text-align: end; }
   .contenedor .espacioBlanco1 {
     grid-area: espacioBlanco1;
@@ -1146,7 +1166,9 @@
   .contenedor main {
     grid-area: main;
     background-color: #bdb8b8;
-    padding-top: 10px; }
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column; }
     .contenedor main .sectionImgPresentacion {
       display: flex;
       flex-direction: column;
@@ -1184,6 +1206,9 @@
           margin-bottom: 10px; }
           .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias:hover {
             transform: scaleY(1.035); }
+          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias div .imgNoticias {
+            height: max-content;
+            width: max-content; }
           .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias .infoNoticias {
             text-align: center;
             margin: 10px; }
@@ -1203,27 +1228,34 @@
           margin-bottom: 10px; }
     .contenedor main .sectionLogos {
       display: flex;
-      flex-direction: column; }
+      flex-direction: column;
+      justify-content: center;
+      align-items: center; }
       .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
         text-align: center;
         padding-top: 50px; }
       .contenedor main .sectionLogos .cajaLogosEmpresas {
         display: flex;
         flex-direction: row;
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
         justify-content: center;
         align-content: space-between;
-        gap: 5px;
         border: 2px solid black;
         text-align: center;
-        margin-bottom: 1rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
-          width: 7rem;
-          height: auto;
-          border: 1px solid gray; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
-          display: none; }
+        padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+        width: max-content;
+        height: max-content; }
+        .contenedor main .sectionLogos .cajaLogosEmpresas div {
+          display: flex;
+          flex-direction: column;
+          justify-content: center; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas div .imgLogos {
+            /*  width: 7rem;
+                    height: auto; */
+            border: 1px solid gray;
+            margin: 3px; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas div .noVisible {
+            display: none; }
   .contenedor footer {
     grid-area: footer; }
     .contenedor footer .cajaContactoCV {
@@ -1277,7 +1309,7 @@
         .contenedor .headerSobreNosotros .logoMenu .menu ul li {
           margin: 10px;
           list-style: none;
-          margin: 2rem; }
+          margin: 1rem; }
           .contenedor .headerSobreNosotros .logoMenu .menu ul li:hover {
             transform: scale(1.2);
             color: white; }
@@ -1300,12 +1332,12 @@
       .contenedor .headerSobreNosotros .tituloLemaEmpresa h1 {
         text-align: end;
         font-size: 25px;
-        color: azure; }
+        color: white; }
       .contenedor .headerSobreNosotros .tituloLemaEmpresa .lemaEmpresa {
         font-style: italic;
         /*clase .lemaEmpresa*/
         font-weight: bold;
-        color: azure;
+        color: white;
         text-align: end; }
   .contenedor .baseCajaHistoria {
     display: flex;
@@ -1359,7 +1391,7 @@
         .contenedor .headerServicios .logoMenu .menu ul li {
           margin: 10px;
           list-style: none;
-          margin: 2rem; }
+          margin: 1rem; }
           .contenedor .headerServicios .logoMenu .menu ul li:hover {
             transform: scale(1.2);
             color: white; }
@@ -1382,12 +1414,12 @@
       .contenedor .headerServicios .tituloLemaEmpresa h1 {
         text-align: end;
         font-size: 25px;
-        color: azure; }
+        color: white; }
       .contenedor .headerServicios .tituloLemaEmpresa .lemaEmpresa {
         font-style: italic;
         /*clase .lemaEmpresa*/
         font-weight: bold;
-        color: azure;
+        color: white;
         text-align: end; }
   .contenedor .layout .layoutServicios .cajaServicios {
     display: flex;
@@ -1426,7 +1458,7 @@
         .contenedor .headerIndustrias .logoMenu .menu ul li {
           margin: 10px;
           list-style: none;
-          margin: 2rem; }
+          margin: 1rem; }
           .contenedor .headerIndustrias .logoMenu .menu ul li:hover {
             transform: scale(1.2);
             color: white; }
@@ -1449,12 +1481,12 @@
       .contenedor .headerIndustrias .tituloLemaEmpresa h1 {
         text-align: end;
         font-size: 25px;
-        color: azure; }
+        color: white; }
       .contenedor .headerIndustrias .tituloLemaEmpresa .lemaEmpresa {
         font-style: italic;
         /*clase .lemaEmpresa*/
         font-weight: bold;
-        color: azure;
+        color: white;
         text-align: end; }
   .contenedor .layoutIndustrias {
     display: flex;
@@ -1494,7 +1526,7 @@
         .contenedor .headerContacto .logoMenu .menu ul li {
           margin: 10px;
           list-style: none;
-          margin: 2rem; }
+          margin: 1rem; }
           .contenedor .headerContacto .logoMenu .menu ul li:hover {
             transform: scale(1.2);
             color: white; }
@@ -1517,12 +1549,12 @@
       .contenedor .headerContacto .tituloLemaEmpresa h1 {
         text-align: end;
         font-size: 25px;
-        color: azure; }
+        color: white; }
       .contenedor .headerContacto .tituloLemaEmpresa .lemaEmpresa {
         font-style: italic;
         /*clase .lemaEmpresa*/
         font-weight: bold;
-        color: azure;
+        color: white;
         text-align: end; }
   .contenedor .baseCajasInformacion1 {
     display: flex;
@@ -1655,59 +1687,72 @@
             transform: scale(1.1); }
         .contenedor main .sectionImgPresentacion .noVisible {
           display: block; }
-      .contenedor main .sectionNoticias .noticias {
-        text-align: center;
-        margin: 50px 10px 10px 10px;
-        padding: 10px; }
-      .contenedor main .sectionNoticias .cajaNoticiasGeneral {
+      .contenedor main .sectionNoticias {
         display: flex;
         flex-direction: column; }
-        .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias {
-          display: flex;
-          flex-direction: row;
-          background-color: #aba9bb;
-          border: 2px solid gray;
-          padding: 10px 30px 30px 30px;
-          margin: 10px; }
-          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias:hover {
-            transform: scaleY(1.035); }
-          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias .infoNoticias {
-            text-align: center;
-            margin: 10px; }
-      .contenedor main .sectionNoticias .infoNoticias {
-        text-align: center;
-        margin: 10px; }
-        .contenedor main .sectionNoticias .infoNoticias .botonVerTodas {
-          display: inline-block;
+        .contenedor main .sectionNoticias .noticias {
           text-align: center;
-          text-decoration: none;
-          color: black;
-          background-color: gray;
-          border: 1px transparent solid;
-          border-radius: 100px;
-          padding: 10px;
-          font-weight: bold;
-          margin-bottom: 10px; }
-      .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
-        text-align: center;
-        padding-top: 50px; }
-      .contenedor main .sectionLogos .cajaLogosEmpresas {
+          margin: 50px 10px 10px 10px;
+          padding: 10px; }
+        .contenedor main .sectionNoticias .cajaNoticiasGeneral {
+          display: flex;
+          flex-direction: column; }
+          .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias {
+            display: flex;
+            flex-direction: row;
+            background-color: #aba9bb;
+            border: 2px solid gray;
+            padding: 10px 20px 10px 20px;
+            margin: 10px; }
+            .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias:hover {
+              transform: scaleY(1.035); }
+            .contenedor main .sectionNoticias .cajaNoticiasGeneral .cajaNoticias .infoNoticias {
+              text-align: center;
+              margin: 10px; }
+        .contenedor main .sectionNoticias .infoNoticias {
+          text-align: center;
+          margin: 10px; }
+          .contenedor main .sectionNoticias .infoNoticias .botonVerTodas {
+            display: inline-block;
+            text-align: center;
+            text-decoration: none;
+            color: black;
+            background-color: gray;
+            border: 1px transparent solid;
+            border-radius: 100px;
+            padding: 10px;
+            font-weight: bold;
+            margin-bottom: 10px; }
+      .contenedor main .sectionLogos {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
+        flex-direction: column;
         justify-content: center;
-        align-content: space-between;
-        gap: 5px;
-        border: 2px solid black;
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
-          width: 7rem;
-          height: auto;
-          border: 1px solid gray; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
-          display: flex; }
+        align-content: center; }
+        .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
+          text-align: center;
+          padding-top: 50px; }
+        .contenedor main .sectionLogos .cajaLogosEmpresas {
+          display: flex;
+          flex-direction: column;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: center;
+          gap: 5px;
+          border: 2px solid black;
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+          width: fit-content;
+          height: fit-content; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas div {
+            display: flex;
+            flex-direction: row; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
+            width: 100px;
+            height: 100px;
+            border: 1px solid gray; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
+            display: flex; }
     .contenedor footer {
       grid-area: footer; }
       .contenedor footer .cajaContactoCV {
@@ -2224,26 +2269,31 @@
           padding: 10px;
           font-weight: bold;
           margin-bottom: 10px; }
-      .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
-        text-align: center;
-        padding-top: 50px; }
-      .contenedor main .sectionLogos .cajaLogosEmpresas {
+      .contenedor main .sectionLogos {
         display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-        align-content: space-between;
-        gap: 5px;
-        border: 2px solid black;
-        text-align: center;
-        margin-bottom: 1rem;
-        padding: 0.5rem 0.2rem 0.5rem 0.2rem; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
-          width: 7rem;
-          height: auto;
-          border: 1px solid gray; }
-        .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
-          display: none; }
+        flex-direction: column; }
+        .contenedor main .sectionLogos .cajaEncabezadoLogoEmpresas {
+          text-align: center;
+          padding-top: 50px; }
+        .contenedor main .sectionLogos .cajaLogosEmpresas {
+          display: flex;
+          flex-direction: row;
+          flex-wrap: wrap;
+          justify-content: center;
+          align-content: space-between;
+          gap: 5px;
+          border: 2px solid black;
+          text-align: center;
+          margin-bottom: 1rem;
+          padding: 0.5rem 0.2rem 0.5rem 0.2rem;
+          width: min-content;
+          height: min-content; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .imgLogos {
+            width: 150px;
+            height: 150px;
+            border: 1px solid gray; }
+          .contenedor main .sectionLogos .cajaLogosEmpresas .noVisible {
+            display: none; }
     .contenedor footer {
       grid-area: footer; }
       .contenedor footer .cajaContactoCV {
